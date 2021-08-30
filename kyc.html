@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Registration</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <section class="vh-100 ">
+        <div class="container py-5 h-100">
+            <div class="row justify-content-center align-items-center h-100">
+                <div class="col-12 col-lg-9 col-xl-7">
+                    <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+                        <div class="card-body p-4 p-md-5">
+                            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 text-center">KYC detail</h3>
+                            <form action="#" onsubmit="return kyc()" class="bg-light">
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-4 pb-2">
+
+                                        <div class="form-outline">
+                                            <input type="text" id="pannumber" name="pannumber" onchange="return kyc()"
+                                                class="form-control form-control-lg" />
+                                            <label class="form-label" for="formFile">PAN card number</label>
+                                        </div>
+                                        <span id="panno" class="text-danger  font-weight-bold "></span>
+                                    </div>
+
+                                    <div class="col-md-6 mb-4 pb-2">
+
+                                        <div class="">
+                                            <label for="formFileLg" class="form-label">Upload pan Photo:</label>
+                                            <input class="form-control form-control-lg" type="file" id="uploadphoto"
+                                                name="uploadphoto" accept="image/*" />
+                                        </div>
+                                        <span id="uploadphoto" class="text-danger  font-weight-bold "></span>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-4 pb-2">
+
+                                        <div class="">
+                                            <select class="form-select" aria-label="Disabled select example" id="state"
+                                                name="state">
+                                                <option selected>Adress proof</option>
+                                                <option value="1">Adhaar</option>
+                                                <option value="2">passport</option>
+                                                <option value="3">Voter ID</option>
+
+
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 mb-4 pb-2">
+
+                                        <div class="">
+                                            <label for="formFileLg" class="form-label">Upload address proof photo(front+back)</label>
+                                            <input class="form-control form-control-lg" type="file" id="upload address"
+                                                name="upload address" accept="image/*" />
+                                        </div>
+                                        <span id="uploadadd" class="text-danger  font-weight-bold "></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-4 pb-2">
+
+                                        <div class="">
+                                            <label for="formFileLg" class="form-label">Shop Photo:</label>
+                                            <input class="form-control form-control-lg" type="file" id="shopphoto1"
+                                                name="shopphoto1" accept="image/*" />
+                                        </div>
+                                        <span id="shoppho1" class="text-danger  font-weight-bold "></span>
+                                    </div>
+
+                                    <div class="col-md-6 mb-4 pb-2">
+
+                                        <div class="">
+                                            <label for="formFileLg" class="form-label">Shop Owner Photo:</label>
+                                            <input class="form-control form-control-lg" type="file" id="shopownerphoto1"
+                                                name="shopownerphoto1" accept="image/*" />
+                                        </div>
+                                        <span id="shopown1" class="text-danger  font-weight-bold "></span>
+                                    </div>
+
+                                    
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <div class="mt-4 pt-2  text-center">
+                                    <input class="btn btn-primary btn-lg" type="submit" value="Submit" />
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+
+    <script type="text/javascript">
+    
+    
+    function kyc(){
+
+        var pannumber=document.getElementById('pannumber').value;
+
+
+        document.getElementById('panno').innerHTML = "";
+
+        if(pannumber ==""){
+
+            document.getElementById('panno').innerHTML="This field is mandatory";
+            return false;
+        }
+
+
+
+    }
+    
+    
+    
+    
+    
+    </script>
+
+
+
+
+
+
+
+</body>
