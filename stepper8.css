@@ -184,28 +184,33 @@ select.list-dt:focus {
 }
 
 #progressbar #account:before {
-    font-family: FontAwesome;
+    font-family:  Helvetica, sans-serif;
     content: "1";
+    font-weight: bolder;
 }
 
 #progressbar #personal:before {
     font-family: FontAwesome;
     content: "2";
+    font-weight: bolder;
 }
 
 #progressbar #payment:before {
     font-family: FontAwesome;
     content: "3";
+    font-weight: bolder;
 }
 
 #progressbar #confirm:before {
     font-family: FontAwesome;
-    content: "4"
+    content: "4";
+    font-weight: bolder;
 }
 
 #progressbar #gateway:before {
     font-family: FontAwesome;
-    content: "5"
+    content: "5";
+    font-weight: bolder;
 }
 
 
@@ -218,7 +223,7 @@ select.list-dt:focus {
     line-height: 45px;
     display: block;
     font-size: 18px;
-    color: #ffffff;
+    color: black;
     background: #e0e0e0;
     border-radius: 50%;
     margin: 0 auto 10px auto;
@@ -238,7 +243,7 @@ select.list-dt:focus {
 
 #progressbar li.active:before,
 #progressbar li.active:after {
-    background: #00b74a;
+    background: #FF9800;
 }
 
 .radio-group {

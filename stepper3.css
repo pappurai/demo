@@ -20,7 +20,7 @@ html {
 
 #grad1 {
     background-color:  #045de9;
-    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);      
+    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
 }
 
 #msform {
@@ -33,7 +33,7 @@ html {
     background: white;
     border: 0 none;
     border-radius: 0px;
-    box-shadow: 0 0px 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
     /* padding: 20px 40px 30px 40px; */
     box-sizing: border-box;
     width: 94%;
@@ -178,7 +178,7 @@ select.list-dt:focus {
 #progressbar li {
     list-style-type: none;
     font-size: 12px;
-    width: 25%;
+    width: 20%;
     float: left;
     position: relative
 }
